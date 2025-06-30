@@ -15,8 +15,6 @@
 3. Runs `IITPAVE.exe` via command line.
 
 4. Parses `IITPAVE.OUT` file:
-   - Extracts stress/strain values at depth = h1 and h1/2
-   - Ignores values with `'L'` suffix (as per IRC:37-2018)
 
 5. Appends valid results to a CSV file.
 
