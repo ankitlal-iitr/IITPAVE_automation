@@ -3,26 +3,22 @@ import subprocess
 import re
 import csv
 
-# Constants
 E3, E4 = 240.2, 76.8
 h2, h3 = 100, 450
 poisson_ratio = 0.35
 tyre_pressure = 0.56
 wheel_load = 20000
 
-# Parameter sets
 E1_list = [2000, 2500, 3000, 3500, 4000]
 E2_list = [300, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
 h1_list = [40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0]
 
-# Paths
 base = r"C:\Users\Rajeshwar Lal\Desktop\IITPAVE\IRC_37_IITPAVE\IRC_37_IITPAVE\IRC_37_IITPAVE"
 exe = os.path.join(base, "IITPAVE.exe")
 inp = os.path.join(base, "IITPAVE.IN")
 out = os.path.join(base, "IITPAVE.OUT")
 csv_path = os.path.join(base, "automated_iitpave_response.csv")
 
-# Open CSV writer
 with open(csv_path, "w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow([
